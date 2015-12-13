@@ -1,5 +1,8 @@
-# the following commented lines of code were used to create the dataset. GitHub would not let me upload the original file due
-# to its file size so I created a separate csv file and work with that.
+########################################################################################################################
+
+# the following commented lines of code were used to create the dataset. GitHub would not let me upload the original 
+# file due to its file size so I created a separate csv file and work with that.
+
 ## read in subset of data
 #dset <- read.table(pipe('grep "^[1-2]/2/2007" "household_power_consumption.txt"'),sep=";",na.strings = "?")
 
@@ -13,6 +16,8 @@
 #dset$Date <- as.Date(dset$Date,"%d/%m/%Y")
 #dset$datetime <- with(dset,strptime(paste(Date,Time), format="%Y-%m-%d %H:%M:%S"))
 #write.csv(dset,file="dset.csv")
+
+########################################################################################################################
 
 # now read in the actual data set
 
